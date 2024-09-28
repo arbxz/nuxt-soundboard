@@ -1,3 +1,28 @@
 {
-  "extends": ["@nuxtjs/eslint-config-typescript"]
+  "extends": [
+    "@nuxtjs/eslint-config-typescript",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "vue/html-closing-bracket-newline": [
+      "error",
+      {
+        "singleline": "never",
+        "multiline": "always",
+        "selfClosingTag": {
+          "singleline": "never",
+          "multiline": "always"
+        }
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "semi": false,
+        "trailingComma": "es5",
+        "endOfLine": "auto"
+      }
+    ]
+  }
 }

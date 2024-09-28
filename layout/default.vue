@@ -5,3 +5,9 @@
     <!-- <AppFooter /> -->
   </div>
 </template>
+
+<script>
+export default {
+  name: 'RootLayout',
+}
+</script>
