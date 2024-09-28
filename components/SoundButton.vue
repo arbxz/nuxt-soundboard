@@ -34,7 +34,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   props: {
     sound: {
@@ -43,7 +43,7 @@ export default {
     },
   },
   methods: {
-    playSound(url) {
+    playSound(url: string) {
       const audio = new Audio(url)
       audio.play()
     },
