@@ -1,9 +1,9 @@
 <template>
-  <nav>
+  <nav class="flex justify-center px-4 py-4">
     <div
-      class="px-4 py-4 rounded-md shadow-inner inline-block text-stone-700 text-sm"
+      class="px-4 py-2 rounded-lg bg-stone-900 text-indigo-500 text-sm border-lime-400 border-[1px]"
     >
-      arbxz://soundboard
+      <span class="text-lime-400">arbxz</span>://soundboard
     </div>
   </nav>
 </template>

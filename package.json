@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@formkit/auto-animate": "^0.8.2",
+    "@iconify-json/solar": "^1.2.0",
     "@nuxt/icon": "^1.5.2",
     "@nuxt/image": "^1.8.0",
     "@nuxtjs/eslint-module": "^4.1.0",
