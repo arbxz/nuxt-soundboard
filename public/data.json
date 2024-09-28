@@ -10,5 +10,23 @@
     "reference": "Jujutsu Kaisen",
     "favorite": false,
     "url": "https://www.myinstants.com/media/sounds/gambale.mp3"
+  },
+  {
+    "name": "You will ?",
+    "reference": "Django unchained",
+    "favorite": true,
+    "url": "https://www.101soundboards.com/storage/board_sounds_rendered/4151076-you-will-django-leonardo-dicaprio.mp3?md5=aJkEVpG3r_W4syNtKQpSNA&expires=1727560799"
+  },
+  {
+    "name": "Yummers",
+    "reference": "The boys",
+    "favorite": true,
+    "url": "https://us-tuna-sounds-files.voicemod.net/d3c9c122-bc47-45b1-a346-c9c61e68c509-1722493212995.mp3"
+  },
+  {
+    "name": "Homelander violin",
+    "reference": "The boys",
+    "favorite": true,
+    "url": "https://us-tuna-sounds-files.voicemod.net/798263c9-0d0a-432c-a1b5-521f2111e38d-1659409373778.mp3"
   }
 ]

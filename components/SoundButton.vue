@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group relative flex md:flex-col p-6 gap-4 justify-center items-center bg-indigo-600 hover:bg-lime-400 rounded-xl shadow-md hover:shadow-lime-500 transition-all duration-300 border-white"
+    class="group relative flex md:flex-col p-6 gap-4 justify-center items-center bg-lime-400 hover:bg-lime-200 rounded-xl shadow-md hover:shadow-lime-500 transition-all duration-300 border-white"
   >
     <button class="relative cursor-pointer" @click="playSound(sound.url)">
       <div
