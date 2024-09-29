@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group relative flex md:flex-col p-6 gap-4 justify-center items-center bg-lime-400 hover:bg-lime-200 rounded-xl shadow-md hover:shadow-lime-500 transition-all duration-300 border-white"
+    class="border-2 border-lime-400 group relative flex md:flex-col p-6 gap-4 justify-center items-center bg-stone-950 hover:translate-y-2 rounded-xl shadow-md transition-all duration-300"
   >
     <button class="relative cursor-pointer" @click="playSound(sound.url)">
       <div
@@ -12,17 +12,15 @@
         />
         <Icon
           name="solar:play-broken"
-          class="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-indigo-500 group-hover:text-indigo-300 transition-colors duration-200 text-4xl scale-[1.15] animate-pulse opacity-5"
+          class="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lime-500 text-4xl scale-[1.15] animate-pulse opacity-5"
         />
       </div>
       <div
-        class="relative transition-all duration-200 bg-gradient-to-br from-indigo-950 to-stone-950 w-[150px] h-[150px] group-active:scale-75 rounded-xl z-10"
+        class="relative transition-all duration-200 bg-gradient-to-br from-stone-800 to-stone-950 w-[150px] h-[150px] group-active:scale-75 rounded-xl z-10"
       />
     </button>
     <div class="flex flex-col items-center justify-center gap-2 w-full">
-      <div
-        class="text-2xl font-bold text-white group-hover:text-stone-900 transition-all duration-300"
-      >
+      <div class="text-2xl font-bold text-white transition-all duration-300">
         {{ sound.name }}
       </div>
     </div>
