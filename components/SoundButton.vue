@@ -1,26 +1,28 @@
 <template>
   <div
-    class="border-2 border-lime-400 group relative flex md:flex-col p-6 gap-4 justify-center items-center bg-stone-950 hover:translate-y-2 rounded-xl shadow-md transition-all duration-300"
+    class="w-full border-2 border-indigo-400 group relative flex md:flex-col p-6 gap-4 justify-center items-center bg-stone-950 bg-opacity-70 hover:translate-y-2 rounded-xl shadow-md transition-all duration-300"
   >
     <button class="relative cursor-pointer" @click="playSound(sound.url)">
       <div
-        class="bg-gradient-to-br from-stone-950 to-stone-900 transition-all duration-200 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[100px] h-[100px] group-active:scale-125 rounded-lg overflow-hidden z-20"
+        class="transition-all duration-200 absolute bg-stone-900 left-1/2 top-[35px] lg:top-[60px] -translate-x-1/2 -translate-y-1/2 w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] group-active:shadow-inner group-active:top-1/2 rounded-lg overflow-hidden z-20"
       >
         <Icon
           name="solar:play-broken"
-          class="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lime-400 group-hover:text-lime-300 transition-colors duration-200 text-4xl"
+          class="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-indigo-400 group-hover:text-indigo-200 group-hover:animate-pulse transition-colors duration-200 text-4xl"
         />
         <Icon
           name="solar:play-broken"
-          class="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lime-500 text-4xl scale-[1.15] animate-pulse opacity-5"
+          class="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-indigo-500 text-4xl scale-[1.15] group-hover:scale-125 transition-all duration-300 animate-pulse opacity-5"
         />
       </div>
       <div
-        class="relative transition-all duration-200 bg-gradient-to-br from-stone-800 to-stone-950 w-[150px] h-[150px] group-active:scale-75 rounded-xl z-10"
+        class="relative transition-all duration-200 w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] bg-indigo-600 rounded-lg z-10"
       />
     </button>
     <div class="flex flex-col items-center justify-center gap-2 w-full">
-      <div class="text-2xl font-bold text-white transition-all duration-300">
+      <div
+        class="text-2xl font-bold text-white transition-all duration-300 break-words overflow-ellipsis"
+      >
         {{ sound.name }}
       </div>
     </div>
