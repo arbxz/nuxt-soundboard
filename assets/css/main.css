@@ -1,19 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.container {
-  @apply mx-auto;
+@layer utilities {
+  .container {
+    @apply mx-auto;
+  }
+
+  .background-custom {
+    background-color: #020202;
+    opacity: 0.9;
+    background-image: radial-gradient(
+        #4c2886 0.7000000000000001px,
+        transparent 0.7000000000000001px
+      ),
+      radial-gradient(
+        #492886 0.7000000000000001px,
+        #020202 0.7000000000000001px
+      );
+    background-size: 28px 28px;
+    background-position:
+      0 0,
+      14px 14px;
+  }
+
+  .scroll-animation {
+    will-change: transform;
+    animation: scrolling 5s linear infinite;
+    animation-play-state: paused;
+  }
+
+  .carousel > * {
+    flex: 0 0 100%;
+  }
+
+  .group:hover .scroll-animation {
+    animation-play-state: running;
+  }
 }
 
-.background-custom {
-  background-color: #020202;
-  opacity: 0.9;
-  background-image: radial-gradient(
-      #4c2886 0.7000000000000001px,
-      transparent 0.7000000000000001px
-    ),
-    radial-gradient(#492886 0.7000000000000001px, #020202 0.7000000000000001px);
-  background-size: 28px 28px;
-  background-position:
-    0 0,
-    14px 14px;
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

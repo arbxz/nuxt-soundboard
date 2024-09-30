@@ -19,11 +19,22 @@
         class="relative transition-all duration-200 w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] bg-indigo-600 rounded-lg z-10"
       />
     </button>
-    <div class="flex flex-col items-center justify-center gap-2 w-full">
+    <div
+      class="flex flex-col items-center justify-center gap-2 w-full overflow-hidden"
+    >
+      <!-- Carousel -->
       <div
-        class="text-2xl font-bold text-white transition-all duration-300 break-words overflow-ellipsis"
+        class="carousel flex justify-start mx-auto max-w-64 text-2xl font-bold text-white break-words overflow-ellipsis overflow-hidden"
       >
-        {{ sound.name }}
+        <!-- Groups -->
+        <div class="flex scroll-animation whitespace-nowrap pr-4">
+          <div>
+            {{ sound.name }}
+          </div>
+        </div>
+        <div aria-hidden class="flex scroll-animation whitespace-nowrap">
+          <div>{{ sound.name }}</div>
+        </div>
       </div>
     </div>
     <div
