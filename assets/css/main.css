@@ -27,7 +27,7 @@
   .scroll-animation {
     will-change: transform;
     animation: scrolling 5s linear infinite;
-    animation-play-state: paused;
+    animation-play-state: initial;
   }
 
   .carousel > * {
