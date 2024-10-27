@@ -4,9 +4,9 @@
   >
     <button class="group relative cursor-pointer">
       <div
-        class="transition-all duration-200 absolute left-1/2 top-[42px] -translate-x-1/2 -translate-y-1/2 w-[100px] h-[100px] rounded-full bg-red-500 overflow-hidden group-active:top-1/2 group-hover:shadow-inner"
+        class="transition-all duration-200 absolute left-1/2 top-[42px] -translate-x-1/2 -translate-y-1/2 w-[100px] h-[100px] rounded-full bg-lime-500 overflow-hidden group-active:top-1/2 group-hover:shadow-inner"
       />
-      <div class="w-[100px] h-[100px] rounded-full bg-red-600 shadow" />
+      <div class="w-[100px] h-[100px] rounded-full bg-lime-600 shadow" />
     </button>
     <div class="flex items-center justify-center gap-4 w-full">
       <div

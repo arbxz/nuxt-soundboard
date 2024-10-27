@@ -60,17 +60,17 @@ import '~/assets/css/main.css'
 
 useHead({
   templateParams: {
-    blogCategory: 'soundboard',
+    blogCategory: 'soundboard'
   },
   title: 'arbxz',
-  titleTemplate: '%s %separator %blogCategory %separator %siteName',
+  titleTemplate: '%s %separator %blogCategory %separator %siteName'
 })
 
 export default {
   data() {
     return {
       sounds: [] as ISoundCard[],
-      favoriteSounds: [] as ISoundCard[],
+      favoriteSounds: [] as ISoundCard[]
     }
   },
   async created() {
@@ -78,6 +78,6 @@ export default {
     const data: ISoundCard[] = await response.json()
     this.sounds = data
     this.favoriteSounds = data.filter((sound: ISoundCard) => sound.favorite)
-  },
+  }
 }
 </script>

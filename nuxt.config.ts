@@ -2,8 +2,8 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      titleTemplate: '%s %separator %siteName',
-    },
+      titleTemplate: '%s %separator %siteName'
+    }
   },
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
@@ -16,5 +16,6 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxtjs/google-fonts',
     '@nuxtjs/seo',
-  ],
+    '@nuxthub/core'
+  ]
 })
