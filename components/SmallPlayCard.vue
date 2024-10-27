@@ -4,7 +4,7 @@
     @click="playSound(sound.url)"
   >
     <div
-      class="text-white text-left whitespace-nowrap break-words overflow-hidden overflow-ellipsis"
+      class="flex-1 text-white text-left whitespace-nowrap break-words overflow-hidden overflow-ellipsis"
     >
       {{ sound.name }}
     </div>
