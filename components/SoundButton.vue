@@ -4,7 +4,7 @@
   >
     <button class="relative cursor-pointer" @click="playSound(sound.url)">
       <div
-        class="transition-all duration-200 absolute bg-stone-900 left-1/2 top-[35px] lg:top-[65px] -translate-x-1/2 -translate-y-1/2 w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] group-active:shadow-inner group-active:top-1/2 rounded-full overflow-hidden z-20"
+        class="transition-all duration-200 absolute bg-stone-900 left-1/2 top-[35px] lg:top-[65px] -translate-x-1/2 -translate-y-1/2 w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] group-active:shadow-inner group-active:top-1/2 rounded-lg overflow-hidden z-20"
       >
         <Icon
           name="solar:play-broken"
@@ -16,7 +16,7 @@
         />
       </div>
       <div
-        class="shadow-md shadow-indigo-700 relative transition-all duration-200 w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] bg-indigo-600 rounded-full z-10"
+        class="shadow-md shadow-indigo-700 relative transition-all duration-200 w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] bg-indigo-600 rounded-lg z-10"
       />
     </button>
 

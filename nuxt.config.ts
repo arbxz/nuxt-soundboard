@@ -10,12 +10,9 @@ export default defineNuxtConfig({
   ssr: false,
   modules: [
     '@nuxtjs/tailwindcss',
-    '@nuxt/image',
     '@nuxtjs/eslint-module',
     '@formkit/auto-animate',
     '@nuxt/icon',
-    '@nuxtjs/google-fonts',
-    '@nuxtjs/seo',
     '@nuxthub/core'
   ]
 })
