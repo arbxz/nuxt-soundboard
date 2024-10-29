@@ -52,14 +52,14 @@ export default {
   props: {
     sound: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
   methods: {
     playSound(url: string) {
       const audio = new Audio(url)
       audio.play()
-    }
-  }
+    },
+  },
 }
 </script>

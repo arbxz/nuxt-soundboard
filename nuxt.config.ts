@@ -2,8 +2,8 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      titleTemplate: '%s %separator %siteName'
-    }
+      titleTemplate: '%s %separator %siteName',
+    },
   },
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
@@ -13,6 +13,5 @@ export default defineNuxtConfig({
     '@nuxtjs/eslint-module',
     '@formkit/auto-animate',
     '@nuxt/icon',
-    '@nuxthub/core'
-  ]
+  ],
 })
