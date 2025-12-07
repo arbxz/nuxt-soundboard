@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      titleTemplate: '%s %separator %siteName',
+      titleTemplate: '%s %separator',
     },
   },
   compatibilityDate: '2024-04-03',
