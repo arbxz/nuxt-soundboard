@@ -2,7 +2,14 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      titleTemplate: '%s %separator',
+      // %siteName was referenced but never defined (it came from
+      // @nuxtjs/seo, which was never enabled), so tabs showed it literally.
+      title: 'soundboard',
+      titleTemplate: '%s %separator %siteName',
+      templateParams: {
+        siteName: 'arbxz',
+        separator: '|',
+      },
     },
   },
   compatibilityDate: '2024-04-03',

@@ -58,14 +58,6 @@
 <script lang="ts">
 import '~/assets/css/main.css'
 
-useHead({
-  templateParams: {
-    blogCategory: 'soundboard',
-  },
-  title: 'arbxz',
-  titleTemplate: '%s %separator %blogCategory %separator %siteName',
-})
-
 export default {
   data() {
     return {
