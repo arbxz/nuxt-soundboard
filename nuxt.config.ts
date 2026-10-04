@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   ssr: false,
   modules: [
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/eslint-module',
+    '@nuxt/eslint',
     '@formkit/auto-animate',
     '@nuxt/icon',
   ],
